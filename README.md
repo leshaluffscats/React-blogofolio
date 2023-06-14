@@ -7,6 +7,9 @@
 ## API information: 
 - https://studapi.teachmeskills.by/api/schema/swagger-ui/
 
+## Link to the website:
+ - https://react-blogofolio-lap285n8o-leshaluffscats.vercel.app/
+
 ## Features:
 - Dark mode
 - Authorization
@@ -22,5 +25,4 @@
 - Axios
 - React-router-dom
 
-## Link:
- - https://react-blogofolio-lap285n8o-leshaluffscats.vercel.app/
+
