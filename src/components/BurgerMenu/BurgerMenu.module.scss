@@ -1,0 +1,137 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.burgerMenu {
+    width: 230px;
+    position: absolute;
+    top: 84px;
+    @include flex;
+    flex-direction: column;
+    z-index: 2;
+    background: $context-color-white;
+
+    span {
+        color: $context-color-white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .userName {
+        background-color: $primary-color;
+        width: 100%;
+        height: 83px;
+        @include flex;
+        justify-content: center;
+        border-top: 1px solid $primary-color2;
+    }
+
+    button {
+        background: none;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        height: 80px;
+        cursor: pointer;
+    }
+
+    .upperBtns {
+        margin-bottom: 97%;
+        @include flex;
+        flex-direction: column;
+
+        button {
+            height: 83px;
+            border: 1px solid $context-color-light;
+            width: 100%;
+            width: 230px;
+        }
+    }
+
+    .lowerBtns {
+        @include flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        button {
+            border: 1px solid $context-color-light;
+            width: 50%;
+        }
+    }
+
+    .logOutBtn {
+        background-color: $context-color-light;
+        width: 100%;
+    }
+}
+
+// =========================================
+.burgerMenuDark {
+
+    width: 230px;
+    position: absolute;
+    top: 84px;
+    @include flex;
+    flex-direction: column;
+    z-index: 2;
+    background: $secondary-color-black;
+    background: #313030;
+
+    span {
+        color: $context-color-white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .userName {
+        background-color: $primary-color;
+        width: 100%;
+        height: 83px;
+        @include flex;
+        justify-content: center;
+        border-top: 1px solid $primary-color2;
+    }
+
+    button {
+        background: none;
+        border: none;
+        font-weight: 600;
+        font-size: 16px;
+        height: 80px;
+        cursor: pointer;
+        color: $context-color-light;
+    }
+
+    .upperBtns {
+        margin-bottom: 97%;
+        @include flex;
+        flex-direction: column;
+
+        button {
+            height: 83px;
+            border: 1px solid $context-color-light;
+            width: 100%;
+            width: 230px;
+        }
+    }
+
+    .lowerBtns {
+        @include flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        button {
+            border: 1px solid $context-color-light;
+            width: 50%;
+
+            img {
+                filter: invert(0.8)
+            }
+        }
+    }
+
+    .logOutBtn {
+        background: $primary-color;
+        width: 100%;
+        color: $context-color-light;
+    }
+}

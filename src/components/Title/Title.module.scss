@@ -1,0 +1,31 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.title {
+    @include flex;
+    color: $context-color-white;
+    justify-content: center;
+    width: 85px;
+    height: 100%;
+    background-color: $primary-color;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.titleActive {
+    @include flex;
+    color: $context-color-white;
+    justify-content: center;
+    width: 185px;
+    height: 100%;
+    background-color: $primary-color;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px ) {
+    .title, .titleActive {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,1 @@
+export const POSTS_API = "https://studapi.teachmeskills.by";

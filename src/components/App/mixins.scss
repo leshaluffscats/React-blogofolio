@@ -1,0 +1,16 @@
+@import "../App/var.scss";
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin darkTheme {
+    background-color: $secondary-color-black;
+    color: $context-color-white;
+}

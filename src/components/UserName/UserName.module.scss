@@ -1,0 +1,30 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.title {
+    @include flex;
+    color: #fff;
+    justify-content: space-between;
+    width: 200px;
+    background-color: $primary-color;
+    padding: 0 15px;
+    cursor: pointer;
+
+    div {
+        background-color: $primary-color2;
+        height: 48px;
+        width: 48px;
+        font-weight: 600;
+        text-align: center;
+        @include flex;
+        justify-content: center;
+        border-radius: 2px;
+    }
+
+    h5 {
+        font-size: 16px;
+        text-align: center;
+        word-wrap: break-word;
+        width: 80px;
+    }
+}

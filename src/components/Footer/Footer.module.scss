@@ -1,0 +1,29 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.footer {
+    @include flex;
+    justify-content: space-between;
+    padding: 0 calc((100% - 1120px) / 2);
+    height: 91px;
+    align-items: center;
+    color: $bg-color-grey;
+}
+
+.footerDark {
+    @include darkTheme;
+    @include flex;
+    justify-content: space-between;
+    padding: 0 calc((100% - 1120px) / 2);
+    height: 91px;
+    align-items: center;
+}
+
+@media screen and (max-width: 380px) {
+.footer, .footerDark {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+}

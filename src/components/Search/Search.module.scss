@@ -1,0 +1,33 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+
+.searchWrapper {
+    h1 {
+        margin: 0 0 50px 30px;
+    }
+}
+
+.searchWrapperDark {
+    @include darkTheme;
+
+    h1 {
+        color: $context-color-white;
+        margin: 0 0 50px 30px;
+    }
+}
+
+.searchResults {
+    @include flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.searchResultsDark {
+    @include darkTheme;
+    @include flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}

@@ -1,0 +1,19 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.burger {
+    @include flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 84px;
+    height: 84px;
+    padding: 33px 0;
+    cursor: pointer;
+    border-right: 1px solid $primary-color2;
+
+    span {
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+    }
+}

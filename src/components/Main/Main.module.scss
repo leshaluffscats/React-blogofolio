@@ -1,0 +1,28 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.container {
+    margin: 0 auto;
+    padding: 0 calc((100% - 1120px) / 2);
+    padding-top: $lvl-1-margin;
+
+    h1 {
+        margin-bottom: $lvl-4-margin;
+        font-weight: 700;
+        font-size: $h1-fz-desktop-tablet;
+    }
+}
+
+.containerDark {
+    margin: 0 auto;
+    padding: 0 calc((100% - 1120px) / 2);
+    padding-top: $lvl-1-margin;
+    @include darkTheme;
+
+    h1 {
+        margin-bottom: $lvl-4-margin;
+        font-weight: 700;
+        font-size: $h1-fz-desktop-tablet;
+        color: $context-color-white;
+    }
+}

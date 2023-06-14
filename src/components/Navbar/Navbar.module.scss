@@ -1,0 +1,8 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+nav {
+    background-color: $primary-color;
+    height: 84px;
+    @include flex;
+}

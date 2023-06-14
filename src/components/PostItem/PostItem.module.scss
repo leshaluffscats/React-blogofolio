@@ -1,0 +1,62 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.postItem {
+    width: 352px;
+    height: 450px;
+    border-bottom: 1px solid $bg-color-medium;
+    margin-bottom: $lvl-4-margin;
+    cursor: pointer;
+    overflow: hidden;
+
+    p {
+        color: $bg-color-grey;
+        margin-bottom: $lvl-8-margin-all;
+        word-wrap: break-word;
+    }
+
+    .text {
+        max-height: 3.8em;
+        overflow: hidden;
+    }
+
+    h2 {
+        color: $secondary-color-black;
+    }
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        max-height: 350px;
+    }
+}
+
+.postItemDark {
+    width: 352px;
+    height: 450px;
+    border-bottom: 1px solid $bg-color-medium;
+    margin-bottom: $lvl-4-margin;
+    cursor: pointer;
+    overflow: hidden;
+
+    p {
+        color: $bg-color-grey;
+        margin-bottom: $lvl-8-margin-all;
+        word-wrap: break-word;
+    }
+
+    .text {
+        max-height: 3.8em;
+        overflow: hidden;
+    }
+
+    h2 {
+        color: $context-color-white;
+    }
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        max-height: 350px;
+    }
+}

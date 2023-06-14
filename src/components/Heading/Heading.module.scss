@@ -1,0 +1,8 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: $secondary-color-black;
+}

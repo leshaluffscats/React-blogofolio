@@ -1,0 +1,15 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+
+.favPosts {
+    margin: 30px auto;
+    @include grid;
+    flex-wrap: wrap;
+}
+
+h3 {
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+}

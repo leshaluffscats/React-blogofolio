@@ -1,0 +1,111 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.successPage {
+    @include flex;
+    justify-content: center;
+    background-color: $bg-color-extra-light;
+    flex-direction: column;
+    padding-bottom: 20px;
+    height: 87vh;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        cursor: pointer;
+    }
+
+    .backToHome {
+        margin-top: 72px;
+        width: 100%;
+        margin-left: 27%;
+    }
+
+    h1 {
+        margin: 32px 0 90px 0;
+        width: 100%;
+        margin-left: 27%;
+        font-size: $h1-fz-desktop-tablet;
+    }
+
+    div {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid $bg-color-medium;
+        padding: 40px;
+        max-width: 624px;
+
+        a {
+            width: 544px;
+            height: 56px;
+            background-color: $primary-color;
+            color: $context-color-white;
+            font-weight: 600;
+            font-size: $h3-fz-all-devices;
+            border: none;
+            margin: 48px 0 24px 0;
+            text-align: center;
+            line-height: 56px;
+        }
+    }
+
+}
+
+// ========================================
+
+.successPageDark {
+    @include flex;
+    justify-content: center;
+    @include darkTheme;
+    flex-direction: column;
+    padding-bottom: 20px;
+    height: 87vh;
+
+    a {
+        text-decoration: none;
+        color: $context-color-white;
+        cursor: pointer;
+    }
+
+    .backToHome {
+        margin-top: 72px;
+        width: 100%;
+        margin-left: 27%;
+    }
+
+    h1 {
+        margin: 32px 0 90px 0;
+        width: 100%;
+        margin-left: 27%;
+        font-size: $h1-fz-desktop-tablet;
+        color: $context-color-white;
+    }
+
+    div {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid $bg-color-medium;
+        padding: 40px;
+        max-width: 624px;
+
+        p {
+            color: $context-color-white;
+        }
+
+        a {
+            width: 544px;
+            height: 56px;
+            background-color: $primary-color;
+            color: $context-color-white;
+            font-weight: 600;
+            font-size: $h3-fz-all-devices;
+            border: none;
+            margin: 48px 0 24px 0;
+            text-align: center;
+            line-height: 56px;
+        }
+    }
+
+}

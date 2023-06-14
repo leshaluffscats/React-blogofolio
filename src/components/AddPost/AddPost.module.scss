@@ -1,0 +1,272 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.addPost__container {
+    background-color: #F3F3F3;
+    padding: 0 calc((100% - 1120px) / 2);
+
+    form {
+        @include flex;
+        flex-direction: column;
+        margin: 64px 0 0;
+
+        label {
+            font-weight: 600;
+            text-transform: capitalize;
+            width: 100%;
+        }
+
+        .input__wrapper {
+            @include flex;
+            align-items: flex-start;
+        }
+
+        .input__file {
+            visibility: hidden;
+            opacity: 0;
+            width: 1px;
+        }
+
+        .filename {
+            @include flex;
+            align-items: center;
+            height: 56px;
+            background-color: $context-color-white;
+        }
+
+        .fileLabel {
+            border: 2px solid #FFF;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 165px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 0px 2px 2px 0px;
+
+        }
+
+        input {
+            margin: 8px 0 40px;
+            height: 56px;
+            border: none;
+            width: 100%;
+            font-size: 20px;
+
+        }
+
+        div {
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            gap: 33px;
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+            height: 245px;
+            border: none;
+            margin: 8px 0 40px;
+            font-size: 20px;
+
+        }
+
+        .textareaSmall {
+            height: 85px;
+        }
+
+        .buttons__wrapper {
+            button {
+                width: 143px;
+                height: 50px;
+                cursor: pointer;
+                font-weight: 600;
+                border: none;
+                background-color: $context-color-light;
+                border-radius: 2px;
+
+                &:last-of-type {
+                    background: $primary-color;
+                    color: $context-color-white;
+                }
+
+                &:first-of-type {
+                    background: none;
+                    color: $error-color;
+                    margin-right: 60%;
+                    text-align: left;
+                    width: 99px;
+                }
+            }
+        }
+
+    }
+}
+
+
+.addPost__containerDark {
+    @include darkTheme;
+    padding: 0 calc((100% - 1120px) / 2);
+
+    h1{
+        color: $context-color-white;
+    }
+
+    form {
+        @include flex;
+        flex-direction: column;
+        margin: 64px 0 0;
+        
+
+        label {
+            font-weight: 600;
+            text-transform: capitalize;
+            width: 100%;
+        }
+
+        .input__wrapper {
+            @include flex;
+            align-items: flex-start;
+        }
+
+        .input__file {
+            visibility: hidden;
+            opacity: 0;
+            width: 1px;
+        }
+
+        .filename {
+            @include flex;
+            align-items: center;
+            height: 56px;
+            background-color: $context-color-white;
+            color: #000;
+        }
+
+        .fileLabel {
+            border: 2px solid #FFF;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 165px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 0px 2px 2px 0px;
+
+        }
+
+        input {
+            margin: 8px 0 40px;
+            height: 56px;
+            border: none;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        div {
+            width: 100%;
+            @include flex;
+            justify-content: space-between;
+            gap: 33px;
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+            height: 245px;
+            border: none;
+            margin: 8px 0 40px;
+            font-size: 20px;
+
+        }
+
+        .textareaSmall {
+            height: 85px;
+        }
+
+        .buttons__wrapper {
+            button {
+                width: 143px;
+                height: 50px;
+                cursor: pointer;
+                font-weight: 600;
+                border: none;
+                background-color: $context-color-light;
+                border-radius: 2px;
+
+                &:last-of-type {
+                    background: $primary-color;
+                    color: $context-color-white;
+                }
+
+                &:first-of-type {
+                    background: none;
+                    color: $error-color;
+                    margin-right: 60%;
+                    text-align: left;
+                    width: 99px;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .addPost__container,
+    .addPost__containerDark {
+        padding: 0 calc((100% - 1120px) / 2);
+
+        form {
+            margin: 30px 0 36px;
+
+            label {
+                width: 100%;
+            }
+
+            .input__wrapper {
+                width: 30%;
+            }
+
+            .fileLabel {
+                height: 60px;
+                line-height: 30px;
+                width: 90px;
+            }
+
+            input {
+                margin: 8px 0 40px;
+                height: 56px;
+
+            }
+
+            textarea {
+                width: 100%;
+                resize: none;
+                height: 145px;
+                border: none;
+                margin: 8px 0 40px;
+            }
+
+            .textareaSmall {
+                height: 85px;
+            }
+
+            .buttons__wrapper {
+                button {
+                    width: 100px;
+                    height: 50px;
+
+                    &:first-of-type {
+                        margin-right: 30px;
+                        width: 99px;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.inputGroup {
+    @include flex;
+    height: 84px;
+    width: 88%;
+    justify-content: flex-end;
+
+    input {
+        height: 100%;
+        background: $primary-color2;
+        border: none;
+        font-size: $h3-fz-all-devices;
+        color: #FFFFFF;
+        width: 100%;
+        padding: 32px;
+
+        &::placeholder {
+            color: #fff;
+            opacity: 50%;
+            font-size: 16px;
+        }
+    }
+
+    button {
+        height: 100%;
+        width: 84px;
+        background: none;
+        border: none;
+        border-right: 1px solid $primary-color2;
+        border-left: 1px solid $primary-color2;
+        cursor: pointer;
+
+        svg {
+            fill: $context-color-white;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

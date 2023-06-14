@@ -1,0 +1,75 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+.postlist {
+    margin-top: $lvl-2-margin;
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.paginatio {
+    border-bottom: 1px solid $bg-color-medium;
+    border-top: 1px solid $bg-color-medium;
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    // width: 1112px;
+    width: 100%;
+    margin: 0 auto;
+    height: 168px;
+}
+
+.paginatio__linkPrevios {
+    margin-right: 25vw;
+    cursor: pointer;
+}
+
+.paginatio__linkNext {
+    margin-left: 25vw;
+    cursor: pointer;
+}
+
+.paginatio__linkDisabled {
+    color: $bg-color-grey;
+}
+
+.paginatio__linkActive {
+    background-color: $primary-color;
+    border-radius: 5px;
+    color: $context-color-white;
+    padding: 2px;
+}
+
+.paginatio__page {
+    cursor: pointer;
+}
+
+
+// ============================================
+
+@media screen and (max-width: 767px) {
+    .postlist {
+        margin-top: $lvl-2-margin;
+        justify-content: center;
+    }
+
+    .paginatio {
+        width: 100%;
+        margin: 0 auto;
+        height: 168px;
+    }
+
+    .paginatio__linkPrevios {
+        margin-right: 15vw;
+    }
+
+    .paginatio__linkNext {
+        margin-left: 15vw;
+    }
+
+}

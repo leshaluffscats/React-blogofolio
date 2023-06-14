@@ -1,0 +1,52 @@
+@import "../App/var.scss";
+@import "../App/mixins.scss";
+
+
+.profile__section {
+    @include flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px calc((100% - 1120px) / 2);
+    height: 75vh;
+
+    div {
+        margin-top: 40px;
+
+        p {
+            font-size: $h3-fz-all-devices;
+            margin-bottom: 15px;
+
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+.profile__sectionDark {
+    @include flex;
+    @include darkTheme;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px calc((100% - 1120px) / 2);
+    height: 75vh;
+
+    h1 {
+        color: $context-color-white;
+    }
+
+    div {
+        margin-top: 40px;
+
+        p {
+            font-size: $h3-fz-all-devices;
+            margin-bottom: 15px;
+
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
